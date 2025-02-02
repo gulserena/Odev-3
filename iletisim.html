@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+
+       <!-- css -->
+       <style>
+        /* Genel sayfa stili */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık ve navbar stili */
+header {
+    background-color: #958383;
+    color: #FFEFEF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color:#FFEFEF ;
+}
+
+/* Navbar listesi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+li {
+    color: #909090;
+    font-family: cursive;
+}
+h2 ,label{
+    color: #909090;
+    font-family: cursive;
+    
+}
+button{
+    background-color: #958383;
+    color: #FFEFEF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+a {
+    color: #909090;
+    font-family: cursive;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İletişim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkımızda</a></li>
+                <li><a href="servisler.html">Servisler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>İletişim Bilgileri</h2>
+    <ul>
+        <li>Telefon: 0212 123 45 67</li>
+        <li>Adres: Isparta, Türkiye</li>
+        <li>E-posta:abcde@gmail.com</li>
+    </ul>
+    <h2>İletişim Formu</h2>
+    <form action="iletisim.php" method="post">
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad"  required>
+        <br><br>
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" id="soyad" name="soyad" required>
+        <br><br>
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" required></textarea>
+        <br><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+     <section>
+    <h2>Sosyal Medyada Bizi Takip Edin</h2>
+            <ul>
+                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+            </ul>
+        </section>
+
+   
+
+
+
+</body>
+</html>
